@@ -1,0 +1,33 @@
+<sql>
+<statement>
+        CREATE TABLE tbCategoriaCliente(
+        _id INTEGER PRIMARY KEY AUTOINCREMENT,
+        Nombre TEXT,
+        Activo SMALLINT        
+        );
+    </statement>
+    <statement>
+        CREATE TABLE tbTipoCliente(
+        _id INTEGER PRIMARY KEY AUTOINCREMENT,
+        Nombre TEXT,
+        Activo SMALLINT        
+        );
+    </statement>
+    <statement>
+        CREATE TABLE tbZona(
+        _id INTEGER PRIMARY KEY AUTOINCREMENT,
+        Nombre TEXT,
+        Activo SMALLINT        
+        );        
+    </statement>
+    <statement>
+        CREATE TABLE tbEstructuraComercial(
+        _id INTEGER PRIMARY KEY AUTOINCREMENT,
+        Nombre TEXT,
+        IdPadre INTEGER,
+        Nivel SMALLINT,
+        Activo SMALLINT        
+        );
+    </statement>
+    
+</sql>
