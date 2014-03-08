@@ -92,7 +92,7 @@
         MontoPorVencer REAL,
         FechaUltimaCompra INTEGER,
         FechaUltimoPago INTEGER,
-        UltimoPago REAL,        
+        ValorUltimoPago REAL,        
         UsrIng TEXT,
         FecIng INTEGER,
         UsrMod TEXT,               
