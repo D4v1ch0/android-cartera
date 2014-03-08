@@ -148,9 +148,9 @@
         CREATE TABLE tbDocumentoNota(
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
         IdDocumento INTEGER REFERENCES tbDocumento(_id),
-        Nota TEXT,    
-        FechaIngreso INTEGER,
-        UsrIng TEXT        
+        Notas TEXT,            
+        UsrIng TEXT    ,
+        FecIng INTEGER,    
         );
         </statement>
         
@@ -160,7 +160,7 @@
         IdCliente INTEGER REFERENCES tbCliente(_id),
         TipoDocumento TEXT,
         Documento TEXT,
-        Fecha INTEGER,
+        FechaMovimiento INTEGER,
         Total REAL,
         Debito REAL,
         Credito REAL,
