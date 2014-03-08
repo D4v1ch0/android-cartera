@@ -5,28 +5,28 @@
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
         Nombre TEXT,
         Activo SMALLINT        
-        );
+        );
     </statement>
     <statement>
         CREATE TABLE tbTipoIdentificacion(
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
         Nombre TEXT,
         Activo SMALLINT        
-        );
+        );
     </statement>
     <statement>
         CREATE TABLE tbTipoCliente(
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
         Nombre TEXT,
         Activo SMALLINT        
-        );
+        );
     </statement>
     <statement>
         CREATE TABLE tbZona(
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
         Nombre TEXT,
         Activo SMALLINT        
-        );        
+        );        
     </statement>
     <statement>
         CREATE TABLE tbEstructuraComercial(
@@ -35,34 +35,34 @@
         IdPadre INTEGER,
         Nivel SMALLINT,
         Activo SMALLINT        
-        );
+        );
     </statement>
     <statement>
         CREATE TABLE tbActividadCliente(
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
         Nombre TEXT,
         Activo SMALLINT        
-        );
+        );
     </statement>
     <statement>
         CREATE TABLE tbGenero(
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
         Nombre TEXT,
         Activo SMALLINT        
-        );
+        );
     </statement>
     <statement>
         CREATE TABLE tbEstadoCivil(
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
         Nombre TEXT,
         Activo SMALLINT        
-        );
+        );
         <statement>
         CREATE TABLE tbEstadoCliente(
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
         Nombre TEXT,
         Activo SMALLINT        
-        );
+        );
         </statement>
         <statement>
         CREATE TABLE tbCliente(
@@ -97,7 +97,7 @@
         FecIng INTEGER,
         UsrMod TEXT,               
         FecMod INTEGER,
-        );
+        );
         </statement>
         <statement>
         CREATE TABLE tbClienteDireccion(
@@ -109,7 +109,7 @@
         Fax TEXT,
         Latitud INTEGER,
         Longitud INTEGER,
-        IdZonaCliente INTEGER REFERENCES tbZona(_id),
+        IdZona INTEGER REFERENCES tbZona(_id),
         IdCiudad INTEGER, 
         Principal SMALLINT,
         Notas TEXT,
@@ -117,7 +117,7 @@
         FecIng INTEGER,
         UsrMod TEXT,               
         FecMod INTEGER,
-        );
+        );
         </statement>
         <statement>
         CREATE TABLE tbDocumento(
@@ -132,7 +132,7 @@
         Saldo REAL,
         FechaUltimoPago INTEGER,
         ValorUltimoPago REAL        
-        );
+        );
         </statement>
         <statement>
         CREATE TABLE tbDocumentoDividendo(
@@ -142,7 +142,7 @@
         FechaVencimiento INTEGER,
         Total REAL,
         Saldo REAL        
-        );
+        );
         </statement>
         <statement>
         CREATE TABLE tbDocumentoNota(
@@ -151,8 +151,9 @@
         Nota TEXT,    
         FechaIngreso INTEGER,
         UsrIng TEXT        
-        );
+        );
         </statement>
+        
         <statement>
         CREATE TABLE tbMovimientoCliente(
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -164,7 +165,7 @@
         Debito REAL,
         Credito REAL,
         Saldo REAL                
-        );
+        );
         </statement>
     </statement>
 
