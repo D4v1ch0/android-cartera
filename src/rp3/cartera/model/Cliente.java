@@ -4,8 +4,12 @@ import rp3.data.entity.EntityBase;
 
 public class Cliente extends EntityBase<Cliente> {
 	
-	private long id;
+	private long idCliente;
 	private String nombres;
+	private String apellidos;
+	private String razonSocial;
+	private String nombreComercial;
+	
 	private String identificacion;
 	private int idCategoriaCliente;
 	private int idTipoCliente;
