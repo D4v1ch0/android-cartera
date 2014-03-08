@@ -223,9 +223,9 @@ public class Contract {
 
 		public static final String FIELD_FECHAULTIMOPAGO = COLUMN_FECHAULTIMOPAGO;
 		
-		public static final String COLUMN_ULTIMOPAGO = "UltimoPago";
+		public static final String COLUMN_VALORULTIMOPAGO = "ValorUltimoPago";
 
-		public static final String FIELD_ULTIMOPAGO = COLUMN_ULTIMOPAGO;
+		public static final String FIELD_VALORULTIMOPAGO = COLUMN_VALORULTIMOPAGO;
 		
 		public static final String COLUMN_USRING = "UsrIng";
 
@@ -245,5 +245,212 @@ public class Contract {
 
 	}
 	
+	public abstract class ClienteDireccion implements BaseColumns {
+
+		public static final String TABLE_NAME = "tbClienteDireccion";
+
+		public static final String COLUMN_IDCLIENTE = "IdCliente";
+
+		public static final String FIELD_IDCLIENTE = COLUMN_IDCLIENTE;
+
+		public static final String COLUMN_DIRECCION = "Direccion";
+
+		public static final String FIELD_DIRECCION = COLUMN_DIRECCION;
+
+		public static final String COLUMN_TELEFONO1 = "Telefono1";
+
+		public static final String FIELD_TELEFONO1 = COLUMN_TELEFONO1;
+
+		public static final String COLUMN_TELEFONO2 = "Telefono2";
+
+		public static final String FIELD_TELEFONO2 = COLUMN_TELEFONO2;
+		
+		public static final String COLUMN_FAX = "Fax";
+
+		public static final String FIELD_FAX = COLUMN_FAX;
+		
+		public static final String COLUMN_LATITUD = "Latitud";
+
+		public static final String FIELD_LATITUD = COLUMN_LATITUD;
+		
+		public static final String COLUMN_LONGITUD = "Longitud";
+
+		public static final String FIELD_LONGITUD = COLUMN_LONGITUD;
+		
+		public static final String COLUMN_IDZONA = "IdZona";
+
+		public static final String FIELD_IDZONA = COLUMN_IDZONA;
+		
+		public static final String COLUMN_IDCIUDAD = "IdCiudad";
+
+		public static final String FIELD_IDCIUDAD = COLUMN_IDCIUDAD;
+
+		public static final String COLUMN_PRINCIPAL = "Principal";
+
+		public static final String FIELD_PRINCIPAL = COLUMN_PRINCIPAL;
+
+		public static final String COLUMN_NOTAS = "Notas";
+
+		public static final String FIELD_NOTAS = COLUMN_NOTAS;
+		
+		public static final String COLUMN_USRING = "UsrIng";
+
+		public static final String FIELD_USRING = COLUMN_USRING;
+		
+		public static final String COLUMN_FECING = "FecIng";
+
+		public static final String FIELD_FECING = COLUMN_FECING;
+
+		public static final String COLUMN_USRMOD = "UsrMod";
+
+		public static final String FIELD_USRMOD = COLUMN_USRMOD;
+		
+		public static final String COLUMN_FECMOD = "FecMod";
+
+		public static final String FIELD_FECMOD = COLUMN_FECMOD;
+	
+	}
+
+	public abstract class Documento implements BaseColumns {
+
+		public static final String TABLE_NAME = "tbDocumento";
+
+		public static final String COLUMN_IDCLIENTE = "IdCliente";
+
+		public static final String FIELD_IDCLIENTE = COLUMN_IDCLIENTE;
+
+		public static final String COLUMN_FACTURA = "Factura";
+
+		public static final String FIELD_FACTURA = COLUMN_FACTURA;
+
+		public static final String COLUMN_FECHADOCUMENTO = "FechaDocumento";
+
+		public static final String FIELD_FECHADOCUMENTO = COLUMN_FECHADOCUMENTO;
+
+		public static final String COLUMN_PLAZO = "Plazo";
+
+		public static final String FIELD_PLAZO = COLUMN_PLAZO;
+		
+		public static final String COLUMN_SUBTOTAL = "Subtotal";
+
+		public static final String FIELD_SUBTOTAL = COLUMN_SUBTOTAL;
+		
+		public static final String COLUMN_IMPUESTO = "Impuesto";
+
+		public static final String FIELD_IMPUESTO = COLUMN_IMPUESTO;
+		
+		public static final String COLUMN_TOTAL = "Total";
+
+		public static final String FIELD_TOTAL = COLUMN_TOTAL;
+		
+		public static final String COLUMN_SALDO = "Saldo";
+
+		public static final String FIELD_SALDO = COLUMN_SALDO;
+		
+	
+		public static final String COLUMN_FECHAULTIMOPAGO = "FechaUltimoPago";
+
+		public static final String FIELD_FECHAULTIMOPAGO = COLUMN_FECHAULTIMOPAGO;
+		
+		public static final String COLUMN_VALORULTIMOPAGO = "ValorUltimoPago";
+
+		public static final String FIELD_VALORULTIMOPAGO = COLUMN_VALORULTIMOPAGO;
+		
+	
+	}
+
+	public abstract class DocumentoDividendo implements BaseColumns {
+
+		public static final String TABLE_NAME = "tbDocumentoDividendo";
+
+		public static final String COLUMN_IDDOCUMENTO = "IdDocumento";
+
+		public static final String FIELD_IDDOCUMENTO = COLUMN_IDDOCUMENTO;
+
+		public static final String COLUMN_DIVIDENDO = "Dividendo";
+
+		public static final String FIELD_DIVIDENDO = COLUMN_DIVIDENDO;
+
+		public static final String COLUMN_FECHAVENCIMIENTO = "FechaVencimiento";
+
+		public static final String FIELD_FECHAVENCIMIENTO = COLUMN_FECHAVENCIMIENTO;
+
+		public static final String COLUMN_TOTAL = "Total";
+
+		public static final String FIELD_TOTAL = COLUMN_TOTAL;
+		
+		public static final String COLUMN_SALDO = "Saldo";
+
+		public static final String FIELD_SALDO = COLUMN_SALDO;
+		
+		
+	}
+
+	public abstract class DocumentoNota implements BaseColumns {
+
+		public static final String TABLE_NAME = "tbDocumentoNota";
+
+		public static final String COLUMN_IDDOCUMENTO = "IdDocumento";
+
+		public static final String FIELD_IDDOCUMENTO = COLUMN_IDDOCUMENTO;
+
+		public static final String COLUMN_NOTAS = "Notas";
+
+		public static final String FIELD_NOTAS = COLUMN_NOTAS;
+
+		public static final String COLUMN_USRING = "UsrIng";
+
+		public static final String FIELD_USRING = COLUMN_USRING;
+		
+		public static final String COLUMN_FECING = "FecIng";
+
+		public static final String FIELD_FECING = COLUMN_FECING;
+		
+		
+	}
+
+
+	public abstract class MovimientoCliente implements BaseColumns {
+
+		public static final String TABLE_NAME = "tbMovimientoCliente";
+
+		public static final String COLUMN_IDCLIENTE = "IdCliente";
+
+		public static final String FIELD_IDCLIENTE = COLUMN_IDCLIENTE;
+
+		public static final String COLUMN_TIPODOCUMENTO = "TipoDocumento";
+
+		public static final String FIELD_TIPODOCUMENTO = COLUMN_TIPODOCUMENTO;
+
+		public static final String COLUMN_DOCUMENTO = "Documento";
+
+		public static final String FIELD_DOCUMENTO = COLUMN_DOCUMENTO;
+
+		
+		public static final String COLUMN_FECHAMOVIMIENTO = "FechaMovimiento";
+
+		public static final String FIELD_FECHAMOVIMIENTO = COLUMN_FECHAMOVIMIENTO;
+
+		public static final String COLUMN_TOTAL = "Total";
+
+		public static final String FIELD_TOTAL = COLUMN_TOTAL;
+		
+		public static final String COLUMN_DEBITO = "Debito";
+
+		public static final String FIELD_DEBITO = COLUMN_DEBITO;
+		
+		public static final String COLUMN_CREDITO = "Credito";
+
+		public static final String FIELD_CREDITO = COLUMN_CREDITO;
+		
+		public static final String COLUMN_SALDO = "Saldo";
+
+		public static final String FIELD_SALDO = COLUMN_SALDO;
+		
+	
+		
+	
+	}
+
 	
 }
