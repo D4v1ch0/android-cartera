@@ -85,7 +85,14 @@
         FechaNacimiento INTEGER,
         FechaInicioActividad INTEGER,        
         Plazo INTEGER,
-        Notas TEXT,        
+        Notas TEXT,
+        CupoDisponible REAL,
+        DeudaTotal REAL,
+        MontoVencido REAL,
+        MontoPorVencer REAL,
+        FechaUltimaCompra INTEGER,
+        FechaUltimoPago INTEGER,
+        UltimoPago REAL,        
         UsrIng TEXT,
         FecIng INTEGER,
         UsrMod TEXT,               
@@ -147,13 +154,17 @@
         );
         </statement>
         <statement>
-        CREATE TABLE tbDocumentoNota(
+        CREATE TABLE tbMovimientoCliente(
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
-        IdDocumento INTEGER REFERENCES tbDocumento(_id),
-        Nota TEXT,    
-        FechaIngreso INTEGER,
-        UsrIng TEXT        
-        );
+        IdCliente INTEGER REFERENCES tbCliente(_id),
+        TipoDocumento TEXT,
+        Documento TEXT,
+        Fecha INTEGER,
+        Total REAL,
+        Debito REAL,
+        Credito REAL,
+        Saldo REAL                
+        );
         </statement>
     </statement>
 
