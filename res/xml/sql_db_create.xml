@@ -5,28 +5,28 @@
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
         Nombre TEXT,
         Activo SMALLINT        
-        );
+        );
     </statement>
     <statement>
         CREATE TABLE tbTipoIdentificacion(
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
         Nombre TEXT,
         Activo SMALLINT        
-        );
+        );
     </statement>
     <statement>
         CREATE TABLE tbTipoCliente(
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
         Nombre TEXT,
         Activo SMALLINT        
-        );
+        );
     </statement>
     <statement>
         CREATE TABLE tbZona(
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
         Nombre TEXT,
         Activo SMALLINT        
-        );        
+        );        
     </statement>
     <statement>
         CREATE TABLE tbEstructuraComercial(
@@ -35,28 +35,28 @@
         IdPadre INTEGER,
         Nivel SMALLINT,
         Activo SMALLINT        
-        );
+        );
     </statement>
     <statement>
         CREATE TABLE tbActividadCliente(
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
         Nombre TEXT,
         Activo SMALLINT        
-        );
+        );
     </statement>
     <statement>
         CREATE TABLE tbGenero(
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
         Nombre TEXT,
         Activo SMALLINT        
-        );
+        );
     </statement>
     <statement>
         CREATE TABLE tbEstadoCivil(
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
         Nombre TEXT,
         Activo SMALLINT        
-        );
+        );
     </statement>
     <statement>
         CREATE TABLE tbCliente(
@@ -69,8 +69,8 @@
         IdTipoCliente INTEGER REFERENCES tbTipoCliente(_id),
         IdEstructuraComercial INTEGER REFERENCES tbEstructuraComercial(_id),
         IdTipoIdentificacion INTEGER REFERENCES tbTipoIdentificacion(_id),
-        IdCategoria INTEGER REFERENCES tbCategoriaCliente(_id),
-        IdActividad INTEGER REFERENCES tbActividadCliente(_id),
+        IdCategoriaCliente INTEGER REFERENCES tbCategoriaCliente(_id),
+        IdActividadCliente INTEGER REFERENCES tbActividadCliente(_id),
         IdGenero INTEGER REFERENCES tbGenero(_id),       
         IdEstadoCivil INTEGER REFERENCES tbEstadoCivil(_id),
         Identificacion TEXT,
@@ -83,9 +83,9 @@
         FechaModificacion INTEGER,
         Plazo INTEGER,
         Notas TEXT
-        );
+        );
     </statement>
-<statement>
+    <statement>
         CREATE TABLE tbClienteDireccion(
         _id INTEGER PRIMARY KEY AUTOINCREMENT,
         IdCliente INTEGER REFERENCES tbCliente(_id),
@@ -105,4 +105,39 @@
         Notas TEXT
         );
     </statement>
+    <statement>
+        CREATE TABLE tbDocumento(
+        _id INTEGER PRIMARY KEY AUTOINCREMENT,
+        IdCliente INTEGER REFERENCES tbCliente(_id),
+        Factura TEXT,
+        FechaDocumento INTEGER,
+        Plazo INTEGER,
+        Subtotal REAL,
+        Impuesto REAL,
+        Total REAL,
+        Saldo REAL,
+        FechaUltimoPago INTEGER,
+        ValorUltimoPago REAL        
+        );
+    </statement>
+    <statement>
+        CREATE TABLE tbDocumentoDividendo(
+        _id INTEGER PRIMARY KEY AUTOINCREMENT,
+        IdDocumento INTEGER REFERENCES tbDocumento(_id),
+        Dividendo INTEGER,
+        FechaVencimiento INTEGER,
+        Total REAL,
+        Saldo REAL        
+        );
+    </statement>
+    <statement>
+        CREATE TABLE tbDocumentoNota(
+        _id INTEGER PRIMARY KEY AUTOINCREMENT,
+        IdDocumento INTEGER REFERENCES tbDocumento(_id),
+        Nota TEXT,    
+        FechaIngreso INTEGER,
+        UsrIng TEXT        
+        );
+    </statement>
+    
 </sql>
