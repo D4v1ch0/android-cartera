@@ -1,5 +1,8 @@
 <resources>
 
     <string name="app_name">rp3.cartera</string>
-
+  	<string name="label_Identificacion">Identificación</string>
+    	<string name="label_DeudaTotalLista">Total</string>
+    	<string name="label_MontoVencidoLista">Vencido</string>
+    	
 </resources>

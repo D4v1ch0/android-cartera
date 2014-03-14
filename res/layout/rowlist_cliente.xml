@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textViewNombres"
+            style="@style/Widget.TextView.SecondaryHighlight.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text" />
+			
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textViewLabelIdentificacion"
+                style="@style/Widget.TextView.Highlight.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04"
+                android:text="@string/label_Identificacion" />
+
+            <TextView
+                android:id="@+id/textViewIdentificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.43"
+                android:text="Medium Text"
+                style="@style/Widget.TextView.SecondaryHighlight.Small"  />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textViewLabelDeudaTotal"
+                style="@style/Widget.TextView.SecondaryHighlight.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_DeudaTotalLista"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDeudaTotal"
+                style="@style/Widget.TextView.SecondaryHighlight.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Small Text" />
+
+            <TextView
+                android:id="@+id/textViewLabelVencido"
+                style="@style/Widget.TextView.SecondaryHighlight.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_MontoVencidoLista"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewMontoVencido"
+                style="@style/Widget.TextView.SecondaryHighlight.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Small Text" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
