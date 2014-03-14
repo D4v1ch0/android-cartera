@@ -143,6 +143,11 @@ public class Contract {
 
 		public static final String FIELD_NOMBRECOMERCIAL = COLUMN_NOMBRECOMERCIAL;
 
+
+		public static final String COLUMN_IDENTIFICACION = "Identificacion";
+
+		public static final String FIELD_IDENTIFICACION = COLUMN_IDENTIFICACION;
+		
 		public static final String COLUMN_IDCIUDAD = "IdCiudad";
 
 		public static final String FIELD_IDCIUDAD = COLUMN_IDCIUDAD;
@@ -242,6 +247,8 @@ public class Contract {
 		public static final String COLUMN_FECMOD = "FecMod";
 
 		public static final String FIELD_FECMOD = COLUMN_FECMOD;
+		
+		public static final String QUERY_CLIENTES = "Clientes";
 
 	}
 	
@@ -356,6 +363,7 @@ public class Contract {
 
 		public static final String FIELD_VALORULTIMOPAGO = COLUMN_VALORULTIMOPAGO;
 		
+	
 	
 	}
 

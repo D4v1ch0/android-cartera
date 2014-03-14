@@ -7,8 +7,8 @@ import rp3.db.sqlite.DataBase;
 
 public class MovimientoCliente extends EntityBase<MovimientoCliente> {
 
-
 	private int idMovimientoCliente;
+
 	@Override
 	public long getID() {
 		// TODO Auto-generated method stub
@@ -18,7 +18,7 @@ public class MovimientoCliente extends EntityBase<MovimientoCliente> {
 	@Override
 	public void setID(long id) {
 		// TODO Auto-generated method stub
-		setIdMovimientoCliente((int)id);
+		setIdMovimientoCliente((int) id);
 	}
 
 	@Override
@@ -36,20 +36,28 @@ public class MovimientoCliente extends EntityBase<MovimientoCliente> {
 	@Override
 	public void setValues() {
 		// TODO Auto-generated method stub
-		
+
 	}
+
 	public int getIdMovimientoCliente() {
 		return idMovimientoCliente;
 	}
-	
+
 	public void setIdMovimientoCliente(int idMovimientoCliente) {
-		this.idMovimientoCliente= idMovimientoCliente;
-	}
-	
-	public static Cursor getMovimientoClienteCursor(DataBase db, int idCliente){		
-		
-		return db.query(Contract.MovimientoCliente.TABLE_NAME, new String[] { Contract.MovimientoCliente._ID,  Contract.MovimientoCliente.FIELD_TIPODOCUMENTO, Contract.MovimientoCliente.FIELD_DOCUMENTO, Contract.MovimientoCliente.COLUMN_FECHAMOVIMIENTO, Contract.MovimientoCliente.COLUMN_TOTAL, Contract.MovimientoCliente.FIELD_DEBITO, Contract.MovimientoCliente.FIELD_CREDITO, Contract.MovimientoCliente.FIELD_SALDO });
+		this.idMovimientoCliente = idMovimientoCliente;
 	}
 
+	public static Cursor getMovimientoClienteCursor(DataBase db, int idCliente) {
+
+		return db.query(Contract.MovimientoCliente.TABLE_NAME, new String[] {
+				Contract.MovimientoCliente._ID,
+				Contract.MovimientoCliente.FIELD_TIPODOCUMENTO,
+				Contract.MovimientoCliente.FIELD_DOCUMENTO,
+				Contract.MovimientoCliente.COLUMN_FECHAMOVIMIENTO,
+				Contract.MovimientoCliente.COLUMN_TOTAL,
+				Contract.MovimientoCliente.FIELD_DEBITO,
+				Contract.MovimientoCliente.FIELD_CREDITO,
+				Contract.MovimientoCliente.FIELD_SALDO });
+	}
 
 }
