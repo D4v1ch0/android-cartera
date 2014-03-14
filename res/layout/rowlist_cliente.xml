@@ -9,7 +9,7 @@
         android:layout_height="wrap_content" >
 
         <TextView
-            android:id="@+id/textViewNombres"
+            android:id="@+id/textView_nombres"
             style="@style/Widget.TextView.SecondaryHighlight.Medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content" >
 
             <TextView
-                android:id="@+id/textViewLabelIdentificacion"
+                android:id="@+id/textView_labelIdentificacion"
                 style="@style/Widget.TextView.Highlight.Small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
                 android:text="@string/label_Identificacion" />
 
             <TextView
-                android:id="@+id/textViewIdentificacion"
+                android:id="@+id/textView_identificacion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.43"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content" >
 
             <TextView
-                android:id="@+id/textViewLabelDeudaTotal"
+                android:id="@+id/textView_labelDeudaTotal"
                 style="@style/Widget.TextView.SecondaryHighlight.Small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textViewDeudaTotal"
+                android:id="@+id/textView_deudaTotal"
                 style="@style/Widget.TextView.SecondaryHighlight.Small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
                 android:text="Small Text" />
 
             <TextView
-                android:id="@+id/textViewLabelVencido"
+                android:id="@+id/textView_labelVencido"
                 style="@style/Widget.TextView.SecondaryHighlight.Small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textViewMontoVencido"
+                android:id="@+id/textView_montoVencido"
                 style="@style/Widget.TextView.SecondaryHighlight.Small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
