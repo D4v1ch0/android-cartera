@@ -1,0 +1,6 @@
+<config>
+    <dataBaseConfiguration>       
+       <name>Rp3Cartera.db</name>
+       <version>1</version>
+    </dataBaseConfiguration>
+</config>

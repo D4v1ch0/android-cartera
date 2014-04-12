@@ -1,8 +1,34 @@
 <resources>
 
     <string name="app_name">rp3.cartera</string>
-  	<string name="label_Identificacion">Identificación</string>
-    	<string name="label_DeudaTotalLista">Total</string>
-    	<string name="label_MontoVencidoLista">Vencido</string>
-    	
+    <string name="label_Identificacion">Identificación</string>
+    <string name="label_DeudaTotalLista">Total</string>
+    <string name="label_MontoVencidoLista">Vencido</string>
+    <string name="navItem_ClienteLista">Listado de Clientes</string>
+    <string name="navItem_RutaCliente">Ruta de Visita</string>
+    <string name="navItem_CarteraCliente">Cartera de Clientes</string>
+    <string name="navItem_CobranzaCliente">Cobranza de Clientes</string>
+    <string name="label_nombres">Nombres</string>
+    <string name="label_RazonSocial">Razón Social</string>
+    <string name="label_NombreComercial">Nom. Comercial</string>
+    <string name="label_apellidos">Apellidos</string>
+    <string name="label_tipoidentificacion">Tipo ID</string>
+    <string name="label_ciudad">Ciudad</string>
+    <string name="label_TipoCliente">Tipo Cliente</string>
+    <string name="label_CategoriaCliente">Categoría</string>
+    <string name="label_ActividadCliente">Actividad</string>
+    <string name="label_GeneroCliente">Género</string>
+    <string name="label_EstadoCivil">Estado Civíl</string>
+    <string name="label_Email">Email</string>
+    <string name="label_EjEmail">ejemplo@empresa.com</string>
+    <string name="label_FechaNacimiento">Fecha Nacimiento</string>
+    <string name="label_InicioActividad">Inicio de Actividad</string>
+    <string name="label_Plazo">Días Plazo</string>
+    <string name="label_CupoDisponible">Cupo Disponible</string>
+    <string name="label_DeudaTotal">Deuda Total</string>
+    <string name="label_MontoVencido">Monto Vencido</string>
+    <string name="label_MontoPorVencer">Monto por Vencer</string>
+    <string name="label_UltimoPago">Último Pago</string>
+    <string name="label_UltimaCompra">Última Compra</string>
+
 </resources>

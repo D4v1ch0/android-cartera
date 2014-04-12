@@ -304,7 +304,10 @@ public class Cliente extends EntityBase<Cliente> {
 		this.idEstructuraComercial = idEstructuraComercial;
 	}
 	public static Cursor getClientesCursor(DataBase db){
-		Cursor c = db.rawQuery( QueryDir.getQuery(Contract.Cliente.QUERY_CLIENTES) );
+		Cursor c = db.query(Contract.Cliente.TABLE_NAME, 
+				new String[] { Contract.Cliente._ID, Contract.Cliente.FIELD_NOMBRES,
+				Contract.Cliente.FIELD_APELLIDOS, Contract.Cliente.FIELD_IDENTIFICACION, Contract.Cliente.FIELD_DEUDATOTAL, Contract.Cliente.FIELD_MONTOVENCIDO});
+		
 		return c;
 	}
 
